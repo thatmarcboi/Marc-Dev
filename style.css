@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  font-family: Consolas;
+}
+
+html {
+  background-color: #000000;
+}
+
+body {
+  max-width: 60em;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: #1111;
+  color: #e4e4e4;
+  padding: 0 2em;
+}
+
+ul {
+  padding-left: 1em;
+}
+
+hr {
+  border-color: #b3b3b3;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header > .social-icons {
+  display: flex;
+  /* width: 10em; */
+  margin-top: auto;
+  gap: 5px;
+}
+
+header img {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+}
+
+header h1 {
+  margin: 0;
+  padding-top: 1em;
+  display: flex;
+  width: fit-content;
+  column-gap: 10px;
+  flex-wrap: wrap;
+}
+
+header h1 > sub {
+  font-size: 0.5em;
+  margin-top: auto;
+}
+
+header h2 {
+  margin-top: 0;
+  color: #d1d1d1;
+}
+
+footer > .grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1em;
+  row-gap: 0.5em;
+  padding-bottom: 3em;
+}
+
+footer > .grid .item {
+  user-select: all;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
